@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-	<title>DevConf - Bootstrap 5 Template For Tech Conference or Events</title>
+	<title>Creators Summit 2022</title>
 	
 	<!-- Meta -->
 	<meta charset="utf-8">
@@ -840,10 +840,13 @@
 			<div class="sponsors-cta text-center pt-5"><a class="btn-primary btn btn-lg" href="#">Become A Sponsor</a></div>
 		</div>
 	</section><!--//sponsors-section-->
-
-	<section id="contact-us-section" class="contact-us-section ">
+<br>
+	<hr>
+<br>
+<br>
+	<section id="contact-us-section" class="contact-us-section">
 		<h3 class="section-heading text-center mb-3">Contact Us</h3>
-
+<br>
 		<div class="row pricing mb-5 justify-content-evenly">
 			<div class="col-12 col-md-4 p-2 p-lg-4">
 				<div class="card rounded-0 border-0">
@@ -896,6 +899,9 @@
 			
 		</div><!--//pricing-->
 		
+	<br>
+	<br>
+	<br>
 	</section>
 
 	<footer class="footer py-5 theme-bg-primary">
