@@ -1,4 +1,13 @@
-<!-- connect php db using localhost -->
 <?php
-$db = mysqli_connect("localhost", "root", "", "db_crud");
-?>
+$server = "localhost";
+$username = "root";
+$password = "";
+$database = "CreatorSummit";
+
+$conn = mysqli_connect($server, $username, $password, $database);
+if (!$conn) {
+    die("Error". mysqli_connect_error());
+}
+// else {
+//     die("Error". mysqli_connect_error());
+// }
