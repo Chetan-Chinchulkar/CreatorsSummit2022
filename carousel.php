@@ -15,7 +15,7 @@
 				<h1 class="hero-heading mb-2">Creator Summit 2022</h1>
 				<div class="hero-meta mb-3"><i class="far fa-calendar-alt me-2"></i>12 - 15 Oct <i class="fas fa-map-marker-alt mx-2"></i>Guwahati</div>
 				<div class="hero-intro mb-4">GPlus</div>
-				<div class="hero-cta"><a class="btn btn-primary btn-lg" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devconf-free-bootstrap-4-conference-template-for-tech-conferences-and-events/" target="_blank">Register Now</a></div>
+				<div class="hero-cta"><a class="btn btn-primary btn-lg" href="#" target="_blank">Register Now</a></div>
 				
 			</div><!--//hero-text-block-->
 		</div>
