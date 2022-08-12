@@ -16,6 +16,11 @@
         width: auto
     }
 
+    .nav-item{
+        font-size: 18px !important;
+        font-weight: 100 !important;
+    }
+
 </style>
 
 

@@ -19,7 +19,7 @@
 <section class="expect">
     <h2 class="section-heading" style="color: #7E0036;font-weight:100;">What to expect</h2>
     
-    <div class="row justif">
+    <div class="row justify-center">
         <div class="col-md">
             <div class="icon-expect">
                 hello

@@ -30,8 +30,8 @@
 			<div class="hero-text-block">
 				<h2 class="hero-heading mb-2 text-white">G Plus <br> Creators Summit</h2>
 				<hr>
-				<div class="hero-meta mb-3">25 September, 2022</div>
-				<div class="hero-meta mb-3">Guwahati</div>
+				<div class="hero-meta mb-3" style="font-weight:100">25 September, 2022</div>
+				<div class="hero-meta mb-3" style="font-weight:100">Guwahati</div>
 				<hr>
 
 				<div class="event-countdown text-center mb-3">		   

@@ -24,6 +24,12 @@
 
 </head> 
 
+<style>
+	*{
+
+	}
+</style>
+
 <body>    
 
 <!-- include nav.php -->
@@ -35,7 +41,9 @@
 
 	<?php include 'expect.php'; ?>
 	
-	<?php include 'nomination.php'; ?>
+	<?php include 'session-topics.php'; ?>
+	
+	<!-- <?php include 'nomination.php'; ?> -->
 	
 	
 	
