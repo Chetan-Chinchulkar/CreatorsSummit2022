@@ -87,10 +87,7 @@
 					
 				</ul>
 			</div><!--//benefits-list-->
-			<div class="event-countdown text-center mb-3">		   
-				<h4 class="countdown-intro mb-2 text-center mb-3">Event Starts In:</h4>
-				<div id="countdown-box" class="countdown-box"></div>
-			</div><!--//event-countdown-->
+			
 			<!-- <div class="about-cta text-center mb-5"><a class="btn btn-secondary btn-lg  mb-5" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devconf-free-bootstrap-4-conference-template-for-tech-conferences-and-events/" target="_blank">Get Your Ticket Today</a></div> -->
 		</div>
 		

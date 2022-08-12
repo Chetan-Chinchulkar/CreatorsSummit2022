@@ -1,7 +1,28 @@
+<style>
+    @media (min-width: 768px) {
+        nav {
+            padding: 0 15vw !important;
+        }
+    }
+
+    header{
+       backdrop-filter: blur(20px); 
+    }
+    nav{
+        height: 70px !important;
+    }
+    .header .logo-icon {
+        height: 100px !important;
+        width: auto
+    }
+
+</style>
+
+
 <header id="header" class="header fixed-top">	    
     <div class="branding">
         <div class="container-fluid">
-            <nav class="main-nav navbar navbar-expand-lg">
+            <nav class="main-nav navbar navbar-expand-lg dark">
                 <div class="site-logo"><a class="scrollto" href="#hero-block"><img class="logo-icon" src="assets/images/logo-white.png" alt="logo" ></a></div>    
                 
                 <!-- <div class="navbar-btn order-lg-2"><a class="btn btn-secondary" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devconf-free-bootstrap-4-conference-template-for-tech-conferences-and-events/" target="_blank">Tickets</a></div> -->
