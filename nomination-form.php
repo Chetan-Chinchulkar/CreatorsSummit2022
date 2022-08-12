@@ -84,7 +84,7 @@ include 'db-connect.php';
                         <label for="DOB">DOB</label>
                     </div>
                     <!-- Gender Dropdown with Male, Female and Other option -->
-                    <select class="form-select" name="Gender" id="Gender">
+                    <select class="form-group form-select" name="Gender" id="Gender">
                         <option selected>Select Gender</option>
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
@@ -98,7 +98,7 @@ include 'db-connect.php';
                         <label for="CreatingSince">Creating Content Since</label>
                     </div>
                     <!-- Content category select -->
-                    <select class="form-select" name="ContentCategory" id="ContentCategory">
+                    <select class="form-group form-select" name="ContentCategory" id="ContentCategory">
                         <option selected>Select Content Category</option>
                         <option value="Fashion">Fashion</option>
                         <option value="Education">Education</option>
@@ -112,7 +112,187 @@ include 'db-connect.php';
                         <label for="floatingSelect">Select Content Category</label>
                     </select>
                     
+                    <!-- primary platform -->
+                    <select class="form-group form-select" name="PrimaryPlatform" id="PrimaryPlatform">
+                        <option selected>Select Primary Platform</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Twitter">Twitter</option>
+                        <option value="YouTube">YouTube</option>
+                        <option value="Others">Others</option>
+                        <label for="floatingSelect">Select Primary Platform</label>
+                    </select>
+
+                    <!-- primary platform link -->
+                    <div class="form-group form-floating">
+                        <input type="text" class="form-control" id="PrimaryPlatformLink" placeholder="Primary Platform Link">
+                        <label for="PrimaryPlatformLink">Primary Platform Link</label>
+                    </div>
+
+                    <!-- category of social media influencer -->
+                    <select class="form-group form-select" name="SocialMediaCategory" id="SocialMediaCategory">
+                        <option selected>Select Social Media Category</option>
+                        <option value="Micro Influencer">MicroInfluencer : 10k - 50k</option>
+                        <option value="Macro Influencer">MacroInfluencer : 50k - 500k</option>
+                        <option value="Large Influencer">Large Influencer : 500k - 1M</option>
+                        <option value="Mega Influencer">Mega Influencer : 1M - 5M</option>
+                        <option value="Celebrity">Celebrity : 5M+</option>
+                        <label for="floatingSelect">Select Social Media Category</label>
+                    </select>
+
+                    <!-- secondary platform -->
+                    <select class="form-group form-select" name="SecondaryPlatform" id="SecondaryPlatform">
+                        <option selected>Select Secondary Platform</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Twitter">Twitter</option>
+                        <option value="YouTube">YouTube</option>
+                        <option value="Others">Others</option>
+                        <label for="floatingSelect">Select Secondary Platform</label>
+                    </select>
+
+                    <!-- secondary platform link -->
+                    <div class="form-group form-floating">
+                        <input type="text" class="form-control" id="SecondaryPlatformLink" placeholder="Secondary Platform Link">
+                        <label for="SecondaryPlatformLink">Secondary Platform Link</label>
+                    </div>
+
+                    <!-- profile pdf upload -->
+                    <div class="form-group form-floating">
+                        <input type="file" class="form-control" id="ProfilePDF" placeholder="Profile PDF">
+                        <label for="ProfilePDF">Profile PDF</label>
+                    </div>
+
+                    <!-- where did you hear about us -->
+                    <select class="form-group form-select" name="HeardAboutUs" id="HeardAboutUs">
+                        <option selected>Select Where Did You Hear About Us</option>
+                        <option value="Social Media">Social Media</option>
+                        <option value="Word of Mouth">Word of Mouth</option>
+                        <option value="Digital Advertisement">Digital Advertisement</option>
+                        <option value="News Paper">News Paper</option>
+                        <option value="Others">Others (Please Specify)</option>
+                        <label for="floatingSelect">Select Where Did You Hear About Us</label>
+                    </select>
+
+                    <!-- button to display terms -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Terms and Conditions
+                    </button>
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Terms and Conditions</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            <ol>
+                                <li>
+                                Only permanent residents of Assam can submit their nominations for the contest.
+                                </li>
+                                <li>
+                                Content creator must be active in any 1 platform – Facebook, Instagram, Youtube or Twitter for at least 1 year as on 1st September 2022
+                                </li>
+                                <li>
+                                All content posted by the creator must be his own and original, apart from the paid partnerships.
+                                </li>
+                                <li>
+                                Once submitted, the entry will be final.
+                                </li>
+                                <li>
+                                A content creator can nominate themselves in maximum 3 categories.
+                                </li>
+                                <li>
+                                    Nomination fee is Rs 3000/- for the 1st category and 1000/- for subsequent categories. 
+                                </li>
+                                <li>
+                                    Payment to be made by online Payment in favour of the following account
+                                    <br>
+                                    Account Holder Name: Insight Media
+                                    <br>
+                                    Bank Name: Axis Bank
+                                    <br>
+                                    A/C Number: 913020032196231
+                                    <br>
+                                    IFSC: UTIB0000375
+                                    <br>
+                                    Type of Account: Current Account
+                                    <br>
+                                </li>
+                                <li>
+                                    Payment once made are non-refundable.
+                                </li>
+                                <li>
+                                    Last Date of submission of nominations is 30thAugust 2022.
+                                </li>
+                                <li>
+                                    No submission will be accepted after the last date.
+                                </li>
+                                <li>
+                                The shortlisted content creators will be notified by Phone/Email by 10th September 2022.
+                                </li>
+                                <li>
+                                    Winners will be selected by a specialized jury panelbased on different parameters – but not limited to- quality of content (weightage 50%), posts frequency (weightage 20%), engagement rate (weightage 10%), reach (weightage 10%) etc.
+                                <li>
+                                <li>
+                                    Shortlisted content creators will be required to create 1 content on a given theme which might include product or services offered by sponsors of the Creators Summit 2022. These content need not be posted online. Will be for internal evaluation only. 
+                                </li>
+                                <li>
+                                    Participating content creators will be invited to the G Plus Creators Summit 2022, to be hosted in Guwahati in the month of September. Travel, accommodations etc. to attend the summit will need to be arranged by the participants at their own cost. 
+                                </li>
+                                <li>
+                                    Final Date, Time, Itinerary will be announced atleast 5 days prior to the event. 
+                                </li>
+                                <li>
+                                    For each category to be valid, at least 3 nominations are required to select a winner. If less than 3 nominations received for any category the respective category will be cancelled.
+                                </li>
+                                <li>
+                                    In case of any category is cancelled the participants will be moved to any other suitable category or the registration fee paid for that category will be refunded within 30 days from the competition of the summit. The organisers decision will be final in this regards. 
+                                </li>
+                                <li>
+                                    Decision of the jury appointed will be final and cannot be challenged. 
+                                </li>
+                                <li>
+                                G Plus will not be liable for any damage, financial or non financial loss to the attendees due to change in date, venue or cancellation of the summit for reasons beyond control of the management.
+                                </li>
+                                <li>
+                                    The event will be entirely or in part video recorded, photographed, televised and telecast live on social media. Attendees agree to the same and allow the video footage, photograph or any other material to be used by G Plus or its partner organizations in the future as and when required. 
+                                </li>
+                            </ol>
+                        
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- submit button -->
+                    <button type="submit" class="btn btn-primary">Submit</button>
+
                 </form>
+
+                <!-- php code to submit the form -->
+                <?php
+                    if(isset($_POST['Submit'])){
+                        $Name = $_POST['Name'];
+                        $Email = $_POST['Email'];
+                        $Phone = $_POST['Phone'];
+                        $Address = $_POST['Address'];
+                        $City = $_POST['City'];
+                        $State = $_POST['State'];
+                        $Country = $_POST['Country'];
+                        $PinCode = $_POST['PinCode'];
+                        $PrimaryPlatformLink = $_POST['PrimaryPlatformLink'];
+                        $SecondaryPlatformLink = $_POST['SecondaryPlatformLink'];
+                        $ProfilePDF = $_POST['ProfilePDF'];
+                        $HeardAboutUs = $_POST['HeardAboutUs'];
+                        $Terms = $_POST['Terms'];
+
+
+                    }
+                ?>
             </div>
         </div>
 </section>
