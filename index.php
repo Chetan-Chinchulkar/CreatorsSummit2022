@@ -32,6 +32,8 @@
 	<?php include 'carousel.php'; ?>
 	
 	<?php include 'about.php'; ?>
+
+	<?php include 'expect.php'; ?>
 	
 	<?php include 'nomination.php'; ?>
 	
