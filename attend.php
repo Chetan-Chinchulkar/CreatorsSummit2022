@@ -8,6 +8,6 @@
         <div class="text-center">
 
 
-        <a href="#" class="btn btn-secondary btn-lg d-block d-md-inline-block" target="_blank">Registration Form</a>
+        <a href="#" class="btn btn-secondary btn-lg d-block d-md-inline-block" >Registration Form</a>
     </div>
 </section>

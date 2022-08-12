@@ -78,7 +78,7 @@
 			<br>
 			<div class="text-center">
 
-				<a href="#" class="btn btn-primary btn-lg me-md-2 d-block d-md-inline-block mb-3 mb-md-0" target="_blank">Nomination Form</a>
+				<a href="nomination-form.php" class="btn btn-primary btn-lg me-md-2 d-block d-md-inline-block mb-3 mb-md-0" >Nomination Form</a>
 				<!-- <a href="#" class="btn btn-secondary btn-lg d-block d-md-inline-block" target="_blank">Buy Tickets</a> -->
 			</div>
 <br><br>
