@@ -41,26 +41,27 @@ include 'bank-details.php';
         margin: 20px 0 !important;
     }
     .payment-details{
-        /* background-color: yellow; */
+    /* background-color: yellow; */
         height: fit-content;
     }   
+    
 </style>
 
 <body>    
 
-<!-- include nav.php -->
-<?php include 'nav.php'; ?>
+
 
 
 <!-- form here -->
 
-    <section class="nomination-form" style="margin: 10% 20%;padding:0 0%;" >
+    <section class="registration-form" style="margin: 10% 0%;padding:0 10%;" >
         
-        <div class="media-block theme-bg-light" style="border-radius: 10px; padding:0 0%;">
-			<div class="row justify-content-evenly">
-				<h4 class="text-center mb-3">Nomination</h4>
+        <div class="media-block theme-bg-light" style="border-radius: 10px; padding:0 10%;">
+			<div class=" row justify-content-evenly">
+				<h4 class="text-center mb-3">Registration</h4>
 
-                <div class="payment-details col-md-4 text-black alert alert-primary" role="alert">
+                <!-- php code to submit the form -->
+                <div class="payment-details col-md-4 col-sm-12 text-black alert alert-primary" role="alert">
                     Payment to be made by online Payment in favour of the following account
                     <br>
                     Account Holder Name: <?php echo $account ;?>
@@ -75,16 +76,12 @@ include 'bank-details.php';
                     <br>
                 </div>
 
-                <form action="nomination-form.php" class="col-md-8" method="POST" >
+                <form action="registration-form.php" class="col-md-8 col-sm-12" method="POST" >
                     <!-- Name -->
                     <div class="form-group form-floating" data-validation="required">
                         <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
                         <label for="name">Name</label>
                     </div>
-                    <!-- <div class="form-group form-floating">
-                        <input type="text" class="form-control" id="Name" placeholder="Name">
-                        <label for="Name">Name</label>
-                    </div> -->
                     <!-- present address -->
                     <div class="form-group form-floating">
                         <input type="text" class="form-control" id="PresentAddress" name="PresentAddress" placeholder="Present Address">
@@ -99,6 +96,19 @@ include 'bank-details.php';
                             <input type="checkbox" class="form-check-input" id="sameAsPresent" onclick="FillAddressInput()">
                             <label class="form-check-label" for="sameAsPresent">Same as Present Address</label>
                         </div>
+                    </div>
+                    <!-- ocuupation as student or working Professional-->
+                    <div class="form-group form-floating">
+                        <select class="form-control" id="Occupation" name="Occupation">
+                            <option value="Student">Student</option>
+                            <option value="Working Professional">Working Professional</option>
+                        </select>
+                        <label for="Occupation">Occupation</label>
+                    </div>
+                    <!-- Organisation -->
+                    <div class="form-group form-floating">
+                        <input type="text" class="form-control" id="Organisation" name="Organisation" placeholder="Organisation">
+                        <label for="Organisation">Institute/Organisation</label>
                     </div>
                     <!-- mobile bumber -->
                     <div class="form-group form-floating">
@@ -115,96 +125,34 @@ include 'bank-details.php';
                         <input type="date" max="<?php echo date("Y-m-d"); ?>" class="form-control" id="DOB" name="DOB" placeholder="DOB">
                         <label for="DOB">DOB</label>
                     </div>
-                    <!-- Gender Dropdown with Male, Female and Other option -->
-                    <select class="form-group form-select" name="Gender" id="Gender">
-                        <option selected>Select Gender</option>
-                        <option value="Male">Male</option>
-                        <option value="Female">Female</option>
-                        <option value="Other">Other</option>
-                        <label for="floatingSelect">Select Gender</label>
-                    </select>
-                    <!-- creating Content since  -->
+                    <!-- proof upload -->
                     <div class="form-group form-floating">
-                        <!-- input year -->
-                        <input type="number"  max="2022" class="form-control" id="CreatingSince" name="CreatingSince" placeholder="Creating Since">
-                        <label for="CreatingSince">Creating Content Since</label>
+                        <input type="file" class="form-control" id="Proof" name="Proof" placeholder="Proof">
+                        <label for="Proof">DOB Proof</label>
                     </div>
-                    <!-- Content category select -->
-                    <select class="form-group form-select" name="ContentCategory" id="ContentCategory">
-                        <option selected>Select Content Category</option>
-                        <option value="Fashion">Fashion</option>
-                        <option value="Education">Education</option>
-                        <option value="Technology">Technology</option>
-                        <option value="Health & Fitness">Health & Fitness</option>
-                        <option value="Social Impact">Social Impact</option>
-                        <option value="Entertainment">Entertainment</option>
-                        <option value="Food">Food</option>
-                        <option value="Travel">Travel</option>
-                        <option value="">Others</option>
-                        <label for="floatingSelect">Select Content Category</label>
-                    </select>
-                    
-                    <!-- primary platform -->
-                    <select class="form-group form-select" name="PrimaryPlatform" id="PrimaryPlatform">
-                        <option selected>Select Primary Platform</option>
-                        <option value="Instagram">Instagram</option>
-                        <option value="Facebook">Facebook</option>
-                        <option value="Twitter">Twitter</option>
-                        <option value="YouTube">YouTube</option>
-                        <option value="Others">Others</option>
-                        <label for="floatingSelect">Select Primary Platform</label>
-                    </select>
-
-                    <!-- primary platform link -->
+                    <!-- Reason -->
                     <div class="form-group form-floating">
-                        <input type="text" class="form-control" id="PrimaryPlatformLink" name="PrimaryPlatformLink" placeholder="Primary Platform Link">
-                        <label for="PrimaryPlatformLink">Primary Platform Link</label>
+                        <textarea class="form-control" id="Reason" name="Reason" placeholder="Reason"></textarea>
+                        <label for="Reason">Why do you want to attend the Summit? (Short Note 2-3 lines)</label>
                     </div>
-
-                    <!-- category of social media influencer -->
-                    <select class="form-group form-select" name="SocialMediaCategory" id="SocialMediaCategory">
-                        <option selected>Select Social Media Category</option>
-                        <option value="Micro Influencer">MicroInfluencer : 10k - 50k</option>
-                        <option value="Macro Influencer">MacroInfluencer : 50k - 500k</option>
-                        <option value="Large Influencer">Large Influencer : 500k - 1M</option>
-                        <option value="Mega Influencer">Mega Influencer : 1M - 5M</option>
-                        <option value="Celebrity">Celebrity : 5M+</option>
-                        <label for="floatingSelect">Select Social Media Category</label>
-                    </select>
-
-                    <!-- secondary platform -->
-                    <select class="form-group form-select" name="SecondaryPlatform" id="SecondaryPlatform">
-                        <option selected>Select Secondary Platform</option>
-                        <option value="Instagram">Instagram</option>
-                        <option value="Facebook">Facebook</option>
-                        <option value="Twitter">Twitter</option>
-                        <option value="YouTube">YouTube</option>
-                        <option value="Others">Others</option>
-                        <label for="floatingSelect">Select Secondary Platform</label>
-                    </select>
-
-                    <!-- secondary platform link -->
+                    <!-- Registration Fees status -->
                     <div class="form-group form-floating">
-                        <input type="text" class="form-control" id="SecondaryPlatformLink" name="SecondaryPlatformLink" placeholder="Secondary Platform Link">
-                        <label for="SecondaryPlatformLink">Secondary Platform Link</label>
+                        <select class="form-control" id="RegistrationFees" name="RegistrationFees">
+                            <option value="Paid">Paid</option>
+                            <option value="Not Paid">Not Paid</option>
+                        </select>
+                        <label for="RegistrationFees">Registration Fees</label>
                     </div>
-
-                    <!-- profile pdf upload -->
+                    <!-- transaction id -->
                     <div class="form-group form-floating">
-                        <input type="file" class="form-control" id="Profile" name="Profile" placeholder="Profile">
-                        <label for="Profile">Profile PDF</label>
+                        <input type="text" class="form-control" id="TransactionID" name="TransactionID" placeholder="Transaction ID">
+                        <label for="TransactionID">Transaction ID</label>
                     </div>
-
-                    <!-- where did you hear about us -->
-                    <select class="form-group form-select" name="HeardAboutUs" id="HeardAboutUs">
-                        <option selected>Select Where Did You Hear About Us</option>
-                        <option value="Social Media">Social Media</option>
-                        <option value="Word of Mouth">Word of Mouth</option>
-                        <option value="Digital Advertisement">Digital Advertisement</option>
-                        <option value="News Paper">News Paper</option>
-                        <option value="Others">Others (Please Specify)</option>
-                        <label for="floatingSelect">Select Where Did You Hear About Us</label>
-                    </select>
+                    <!-- transaction date -->
+                    <div class="form-group form-floating">
+                        <input type="date" max="<?php echo date("Y-m-d"); ?>" class="form-control" id="TransactionDate" name="TransactionDate" placeholder="Transaction Date">
+                        <label for="TransactionDate">Transaction Date</label>
+                    </div>
 
                     <!-- button to display terms -->
                     <div class="form-check" >
@@ -224,22 +172,16 @@ include 'bank-details.php';
                             <div class="modal-body">
                             <ol>
                                 <li>
-                                Only permanent residents of Assam can submit their nominations for the contest.
+                                Last date of registration is 15th September.
                                 </li>
                                 <li>
-                                Content creator must be active in any 1 platform – Facebook, Instagram, Youtube or Twitter for at least 1 year as on 1st September 2022
+                                Registration will be on first come first serve basis. Registration will be closed at the discretion of the organizers.
                                 </li>
                                 <li>
-                                All content posted by the creator must be his own and original, apart from the paid partnerships.
+                                All travel, accommodation etc. to be arranged by the attendee at their own cost. 
                                 </li>
                                 <li>
-                                Once submitted, the entry will be final.
-                                </li>
-                                <li>
-                                A content creator can nominate themselves in maximum 3 categories.
-                                </li>
-                                <li>
-                                    Nomination fee is Rs 3000/- for the 1st category and 1000/- for subsequent categories. 
+                                Registration fee is Rs 4500/- per person to be paid at the time of registration by online mode.
                                 </li>
                                 <li>
                                     Payment to be made by online Payment in favour of the following account
@@ -256,44 +198,18 @@ include 'bank-details.php';
                                     <br>
                                 </li>
                                 <li>
-                                    Payment once made are non-refundable.
+                                Registration is valid for attending the Creators Summit on 25th September 2022 at Vivanta, Guwahati. In case of any change in the date and venue same will be communicated to the registered attendees well in advance.
                                 </li>
                                 <li>
-                                    Last Date of submission of nominations is 30thAugust 2022.
+                                Final itinerary of the summit will be announced by 20th September 2022
                                 </li>
                                 <li>
-                                    No submission will be accepted after the last date.
+                                G Plus will not be liable for any damage, financial or non financial loss to the attendees due to change in date, venue or cancellation of the summit for reasons beyond control of the management. In Case of cancellation of event 50% of the registration fee will be refunded within 30 days from the cancellation of the event. In case of reschedule payments will not be refunded
                                 </li>
                                 <li>
-                                The shortlisted content creators will be notified by Phone/Email by 10th September 2022.
+                                The event will be entirely or in part video recorded, photographed, televised and telecast live on social media. Attendees agrees to the same and allows the video footage, photograph or any other material to be used by G Plus or its partner organizations in the future as and when required.
                                 </li>
-                                <li>
-                                    Winners will be selected by a specialized jury panelbased on different parameters – but not limited to- quality of content (weightage 50%), posts frequency (weightage 20%), engagement rate (weightage 10%), reach (weightage 10%) etc.
-                                <li>
-                                <li>
-                                    Shortlisted content creators will be required to create 1 content on a given theme which might include product or services offered by sponsors of the Creators Summit 2022. These content need not be posted online. Will be for internal evaluation only. 
-                                </li>
-                                <li>
-                                    Participating content creators will be invited to the G Plus Creators Summit 2022, to be hosted in Guwahati in the month of September. Travel, accommodations etc. to attend the summit will need to be arranged by the participants at their own cost. 
-                                </li>
-                                <li>
-                                    Final Date, Time, Itinerary will be announced atleast 5 days prior to the event. 
-                                </li>
-                                <li>
-                                    For each category to be valid, at least 3 nominations are required to select a winner. If less than 3 nominations received for any category the respective category will be cancelled.
-                                </li>
-                                <li>
-                                    In case of any category is cancelled the participants will be moved to any other suitable category or the registration fee paid for that category will be refunded within 30 days from the competition of the summit. The organisers decision will be final in this regards. 
-                                </li>
-                                <li>
-                                    Decision of the jury appointed will be final and cannot be challenged. 
-                                </li>
-                                <li>
-                                G Plus will not be liable for any damage, financial or non financial loss to the attendees due to change in date, venue or cancellation of the summit for reasons beyond control of the management.
-                                </li>
-                                <li>
-                                    The event will be entirely or in part video recorded, photographed, televised and telecast live on social media. Attendees agree to the same and allow the video footage, photograph or any other material to be used by G Plus or its partner organizations in the future as and when required. 
-                                </li>
+                                
                             </ol>
                         
                             </div>
@@ -356,9 +272,11 @@ include 'bank-details.php';
 
                 </form>
 
-               
+                
             </div>
         </div>
+
+        
 </section>
 
 	<!-- include footer.php -->
