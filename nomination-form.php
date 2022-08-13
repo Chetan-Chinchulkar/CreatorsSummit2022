@@ -78,21 +78,18 @@ include 'bank-details.php';
                 <form action="nomination-form.php" class="col-md-8" method="POST" >
                     <!-- Name -->
                     <div class="form-group form-floating" data-validation="required">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
                         <label for="name">Name</label>
                     </div>
-                    <!-- <div class="form-group form-floating">
-                        <input type="text" class="form-control" id="Name" placeholder="Name">
-                        <label for="Name">Name</label>
-                    </div> -->
+
                     <!-- present address -->
                     <div class="form-group form-floating">
-                        <input type="text" class="form-control" id="PresentAddress" name="PresentAddress" placeholder="Present Address">
+                        <input type="text" class="form-control" id="PresentAddress" name="PresentAddress" placeholder="Present Address" required>
                         <label for="PresentAddress">Present Address</label>
                     </div>
                     <!-- permanent address with option of same as present address -->
                     <div class="form-group form-floating">
-                        <input type="text" class="form-control" id="PermanentAddress" name="PermanentAddress" placeholder="Permanent Address">
+                        <input type="text" class="form-control" id="PermanentAddress" name="PermanentAddress" placeholder="Permanent Address" required>
                         <label for="PermanentAddress">Permanent Address</label>
                         <!-- input for same as present address -->
                         <div class="form-check">
@@ -102,17 +99,17 @@ include 'bank-details.php';
                     </div>
                     <!-- mobile bumber -->
                     <div class="form-group form-floating">
-                        <input type="number" maxlength="10" class="form-control" id="MobileNumber" name="MobileNumber" placeholder="Mobile Number">
+                        <input type="number" maxlength="10" class="form-control" id="MobileNumber" name="MobileNumber" placeholder="Mobile Number" required>
                         <label for="MobileNumber">Mobile Number</label>
                     </div>
                     <!-- email -->
                     <div class="form-group form-floating is-invalid">
-                        <input type="email" class="form-control" id="Email" name="Email" placeholder="Email">
+                        <input type="email" class="form-control" id="Email" name="Email" placeholder="Email" required>
                         <label for="Email">Email</label>
                     </div>
                     <!-- DOB -->
                     <div class="form-group form-floating">
-                        <input type="date" max="<?php echo date("Y-m-d"); ?>" class="form-control" id="DOB" name="DOB" placeholder="DOB">
+                        <input type="date" max="<?php echo date("Y-m-d"); ?>" class="form-control" id="DOB" name="DOB" placeholder="DOB" required>
                         <label for="DOB">DOB</label>
                     </div>
                     <!-- Gender Dropdown with Male, Female and Other option -->
@@ -126,7 +123,7 @@ include 'bank-details.php';
                     <!-- creating Content since  -->
                     <div class="form-group form-floating">
                         <!-- input year -->
-                        <input type="number"  max="2022" class="form-control" id="CreatingSince" name="CreatingSince" placeholder="Creating Since">
+                        <input type="number"  max="2022" class="form-control" id="CreatingSince" name="CreatingSince" placeholder="Creating Since" required>
                         <label for="CreatingSince">Creating Content Since</label>
                     </div>
                     <!-- Content category select -->
@@ -157,7 +154,7 @@ include 'bank-details.php';
 
                     <!-- primary platform link -->
                     <div class="form-group form-floating">
-                        <input type="text" class="form-control" id="PrimaryPlatformLink" name="PrimaryPlatformLink" placeholder="Primary Platform Link">
+                        <input type="text" class="form-control" id="PrimaryPlatformLink" name="PrimaryPlatformLink" placeholder="Primary Platform Link" required>
                         <label for="PrimaryPlatformLink">Primary Platform Link</label>
                     </div>
 
@@ -185,13 +182,13 @@ include 'bank-details.php';
 
                     <!-- secondary platform link -->
                     <div class="form-group form-floating">
-                        <input type="text" class="form-control" id="SecondaryPlatformLink" name="SecondaryPlatformLink" placeholder="Secondary Platform Link">
+                        <input type="text" class="form-control" id="SecondaryPlatformLink" name="SecondaryPlatformLink" placeholder="Secondary Platform Link" required>
                         <label for="SecondaryPlatformLink">Secondary Platform Link</label>
                     </div>
 
                     <!-- profile pdf upload -->
                     <div class="form-group form-floating">
-                        <input type="file" class="form-control" id="Profile" name="Profile" placeholder="Profile">
+                        <input type="file" class="form-control" id="Profile" name="Profile" placeholder="Profile" required>
                         <label for="Profile">Profile PDF</label>
                     </div>
 
@@ -208,7 +205,7 @@ include 'bank-details.php';
 
                     <!-- button to display terms -->
                     <div class="form-check" >
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required required>
                         <label class="form-check-label" for="invalidCheck2">
                             Agree to terms and conditions
                         </label>
