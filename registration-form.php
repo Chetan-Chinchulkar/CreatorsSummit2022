@@ -79,17 +79,17 @@ include 'bank-details.php';
                 <form action="registration-form.php" class="col-md-8 col-sm-12" method="POST" >
                     <!-- Name -->
                     <div class="form-group form-floating" data-validation="required">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
                         <label for="name">Name</label>
                     </div>
                     <!-- present address -->
                     <div class="form-group form-floating">
-                        <input type="text" class="form-control" id="PresentAddress" name="PresentAddress" placeholder="Present Address">
+                        <input type="text" class="form-control" id="PresentAddress" name="PresentAddress" placeholder="Present Address" required>
                         <label for="PresentAddress">Present Address</label>
                     </div>
                     <!-- permanent address with option of same as present address -->
                     <div class="form-group form-floating">
-                        <input type="text" class="form-control" id="PermanentAddress" name="PermanentAddress" placeholder="Permanent Address">
+                        <input type="text" class="form-control" id="PermanentAddress" name="PermanentAddress" placeholder="Permanent Address" required>
                         <label for="PermanentAddress">Permanent Address</label>
                         <!-- input for same as present address -->
                         <div class="form-check">
@@ -107,27 +107,27 @@ include 'bank-details.php';
                     </div>
                     <!-- Organisation -->
                     <div class="form-group form-floating">
-                        <input type="text" class="form-control" id="Organisation" name="Organisation" placeholder="Organisation">
+                        <input type="text" class="form-control" id="Organisation" name="Organisation" placeholder="Organisation" required>
                         <label for="Organisation">Institute/Organisation</label>
                     </div>
                     <!-- mobile bumber -->
                     <div class="form-group form-floating">
-                        <input type="number" maxlength="10" class="form-control" id="MobileNumber" name="MobileNumber" placeholder="Mobile Number">
+                        <input type="number" maxlength="10" class="form-control" id="MobileNumber" name="MobileNumber" placeholder="Mobile Number" required>
                         <label for="MobileNumber">Mobile Number</label>
                     </div>
                     <!-- email -->
                     <div class="form-group form-floating is-invalid">
-                        <input type="email" class="form-control" id="Email" name="Email" placeholder="Email">
+                        <input type="email" class="form-control" id="Email" name="Email" placeholder="Email" required>
                         <label for="Email">Email</label>
                     </div>
                     <!-- DOB -->
                     <div class="form-group form-floating">
-                        <input type="date" max="<?php echo date("Y-m-d"); ?>" class="form-control" id="DOB" name="DOB" placeholder="DOB">
+                        <input type="date" max="<?php echo date("Y-m-d"); ?>" class="form-control" id="DOB" name="DOB" placeholder="DOB" required>
                         <label for="DOB">DOB</label>
                     </div>
                     <!-- proof upload -->
                     <div class="form-group form-floating">
-                        <input type="file" class="form-control" id="Proof" name="Proof" placeholder="Proof">
+                        <input type="file" class="form-control" id="Proof" name="Proof" placeholder="Proof" required>
                         <label for="Proof">DOB Proof</label>
                     </div>
                     <!-- Reason -->
@@ -145,18 +145,18 @@ include 'bank-details.php';
                     </div>
                     <!-- transaction id -->
                     <div class="form-group form-floating">
-                        <input type="text" class="form-control" id="TransactionID" name="TransactionID" placeholder="Transaction ID">
+                        <input type="number" class="form-control" id="TransactionID" name="TransactionID" placeholder="Transaction ID" required>
                         <label for="TransactionID">Transaction ID</label>
                     </div>
                     <!-- transaction date -->
                     <div class="form-group form-floating">
-                        <input type="date" max="<?php echo date("Y-m-d"); ?>" class="form-control" id="TransactionDate" name="TransactionDate" placeholder="Transaction Date">
+                        <input type="date" max="<?php echo date("Y-m-d"); ?>" class="form-control" id="TransactionDate" name="TransactionDate" placeholder="Transaction Date" required>
                         <label for="TransactionDate">Transaction Date</label>
                     </div>
 
                     <!-- button to display terms -->
                     <div class="form-check" >
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required required>
                         <label class="form-check-label" for="invalidCheck2">
                             Agree to terms and conditions
                         </label>
@@ -236,33 +236,28 @@ include 'bank-details.php';
                         $Name = $_POST['name'] ?? '';
                         $PresentAddress = $_POST['PresentAddress'] ?? '';
                         $PermanentAddress = $_POST['PermanentAddress'] ?? '';
+                        $Occupation = $_POST['Occupation'] ?? '';
+                        $Organization = $_POST['Organisation'] ?? '';
                         $Mobile =  $_POST['MobileNumber'] ?? '';
                         $Email = $_POST['Email'] ?? '';
                         $DOB = $_POST['DOB'] ?? '';
-                        $Gender = $_POST['Gender'] ?? '';
-                        $ContentSince = $_POST['CreatingSince'] ?? '';
-                        $ContentCategory = $_POST['ContentCategory'] ?? '';
-                        $PrimaryPlatform = $_POST['PrimaryPlatform'] ?? '';
-                        $PrimaryPlatformLink = $_POST['PrimaryPlatformLink'] ?? '';
-                        $SocialMediaCategory = $_POST['SocialMediaCategory'] ?? '';
-                        $SecondaryPlatform = $_POST['SecondaryPlatform'] ?? '';
-                        $SecondaryPlatformLink = $_POST['SecondaryPlatformLink'] ?? '';
-                        $Profile = $_POST['Profile'] ?? '';
-                        $HeardAboutUs = $_POST['HeardAboutUs'] ?? '';
+                        $Reason = $_POST['Reason'] ?? '';
+                        $Fees = $_POST['RegistrationFees'] ?? '';
+                        $TransactionID = $_POST['TransactionID'] ?? '';
+                        $TransactionDate = $_POST['TransactionDate'] ?? '';
 
                         // sql code to insert the data into the database
 
 
-                        $sql = "INSERT INTO `Nomination` 
-                        (`Name`, `PresentAddress`, `PermanentAddress`,`Mobile`, `Email`, `DOB`, `Gender`, `CreatingContentSince`, `ContentCategory`, `PrimaryPlatform`, `CategorySocialMedia`, `PrimaryLink`, `SecondaryPlatform`, `SecondaryLink`, `Profile`, `Reach`) 
-                        VALUES 
-                        ('$Name', '$PresentAddress', '$PermanentAddress', '$Mobile', '$Email', '$DOB', '$Gender', '$ContentSince', '$ContentCategory', '$PrimaryPlatform', '$SocialMediaCategory', '$PrimaryPlatformLink', '$SecondaryPlatform', '$SecondaryPlatformLink', '$Profile', '$HeardAboutUs');";
+                        $sql = "INSERT INTO `registration` (`Name`, `PresentAddress`, `PermanentAddress`, `Occupation`, `Organization`, `Mobile`, `Email`, `DOB`, `Reason`, `FeeStatus`, `TransactionID`, `TransactionDate`) VALUES ('$Name', '$PresentAddress', '$PermanentAddress', '$Occupation', '$Organization', '$Mobile', '$Email', '$DOB', '$Reason', '$Fees', '$TransactionID', '$TransactionDate')";
                         echo $sql;
                         $result = mysqli_query($conn, $sql);
                         // echo "hi3";
 
                         if($result){
                             echo "<script>alert('Nomination Submitted Successfully')</script>";
+                            echo "<script>setTimeout(\"location.href = 'index.php';\",0);</script>";
+
                         }
                         else{
                             echo "<script>alert('Nomination Not Submitted')</script>";

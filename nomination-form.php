@@ -341,16 +341,21 @@ include 'bank-details.php';
                         (`Name`, `PresentAddress`, `PermanentAddress`,`Mobile`, `Email`, `DOB`, `Gender`, `CreatingContentSince`, `ContentCategory`, `PrimaryPlatform`, `CategorySocialMedia`, `PrimaryLink`, `SecondaryPlatform`, `SecondaryLink`, `Profile`, `Reach`) 
                         VALUES 
                         ('$Name', '$PresentAddress', '$PermanentAddress', '$Mobile', '$Email', '$DOB', '$Gender', '$ContentSince', '$ContentCategory', '$PrimaryPlatform', '$SocialMediaCategory', '$PrimaryPlatformLink', '$SecondaryPlatform', '$SecondaryPlatformLink', '$Profile', '$HeardAboutUs');";
-                        echo $sql;
+                        // echo $sql;
                         $result = mysqli_query($conn, $sql);
                         // echo "hi3";
 
                         if($result){
                             echo "<script>alert('Nomination Submitted Successfully')</script>";
+
+
+                            echo "<script>setTimeout(\"location.href = 'index.php';\",0);</script>";
                         }
                         else{
                             echo "<script>alert('Nomination Not Submitted')</script>";
                         }
+
+
                     }
                 ?>
 
