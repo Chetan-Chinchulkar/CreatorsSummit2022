@@ -3,6 +3,8 @@ session_start();
 
 include 'db-connect.php';
 
+// echo $conn;
+
 ?>
 
 
@@ -41,8 +43,8 @@ include 'db-connect.php';
 
 <body>    
 
-<!-- include nav.php -->
-	<?php include 'nav.php'; ?>
+
+
 
 <!-- form here -->
 
@@ -52,35 +54,44 @@ include 'db-connect.php';
 			<div class="container">
 				<h4 class="text-center mb-3">Nomination</h4>
 
-                <form action="nomination-form.php" >
-                    
-                    <div class="form-group form-floating">
+                <form action="nomination-form.php" method="POST" >
+                    <!-- Name -->
+                    <div class="form-group form-floating" data-validation="required">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+                        <label for="name">Name</label>
+                    </div>
+                    <!-- <div class="form-group form-floating">
                         <input type="text" class="form-control" id="Name" placeholder="Name">
                         <label for="Name">Name</label>
-                    </div>
+                    </div> -->
                     <!-- present address -->
                     <div class="form-group form-floating">
-                        <input type="text" class="form-control" id="PresentAddress" placeholder="Present Address">
+                        <input type="text" class="form-control" id="PresentAddress" name="PresentAddress" placeholder="Present Address">
                         <label for="PresentAddress">Present Address</label>
                     </div>
                     <!-- permanent address with option of same as present address -->
                     <div class="form-group form-floating">
-                        <input type="text" class="form-control" id="PermanentAddress" placeholder="Permanent Address">
+                        <input type="text" class="form-control" id="PermanentAddress" name="PermanentAddress" placeholder="Permanent Address">
                         <label for="PermanentAddress">Permanent Address</label>
+                        <!-- input for same as present address -->
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="sameAsPresent" onclick="FillAddressInput()">
+                            <label class="form-check-label" for="sameAsPresent">Same as Present Address</label>
+                        </div>
                     </div>
                     <!-- mobile bumber -->
                     <div class="form-group form-floating">
-                        <input type="text" class="form-control" id="MobileNumber" placeholder="Mobile Number">
+                        <input type="number" maxlength="10" class="form-control" id="MobileNumber" name="MobileNumber" placeholder="Mobile Number">
                         <label for="MobileNumber">Mobile Number</label>
                     </div>
                     <!-- email -->
                     <div class="form-group form-floating is-invalid">
-                        <input type="email" class="form-control" id="Email" placeholder="Email">
+                        <input type="email" class="form-control" id="Email" name="Email" placeholder="Email">
                         <label for="Email">Email</label>
                     </div>
                     <!-- DOB -->
                     <div class="form-group form-floating">
-                        <input type="date" max="<?php echo date("Y-m-d"); ?>" class="form-control" id="DOB" placeholder="DOB">
+                        <input type="date" max="<?php echo date("Y-m-d"); ?>" class="form-control" id="DOB" name="DOB" placeholder="DOB">
                         <label for="DOB">DOB</label>
                     </div>
                     <!-- Gender Dropdown with Male, Female and Other option -->
@@ -94,7 +105,7 @@ include 'db-connect.php';
                     <!-- creating Content since  -->
                     <div class="form-group form-floating">
                         <!-- input year -->
-                        <input type="number"  max="2022" class="form-control" id="CreatingSince" placeholder="Creating Since">
+                        <input type="number"  max="2022" class="form-control" id="CreatingSince" name="CreatingSince" placeholder="Creating Since">
                         <label for="CreatingSince">Creating Content Since</label>
                     </div>
                     <!-- Content category select -->
@@ -125,7 +136,7 @@ include 'db-connect.php';
 
                     <!-- primary platform link -->
                     <div class="form-group form-floating">
-                        <input type="text" class="form-control" id="PrimaryPlatformLink" placeholder="Primary Platform Link">
+                        <input type="text" class="form-control" id="PrimaryPlatformLink" name="PrimaryPlatformLink" placeholder="Primary Platform Link">
                         <label for="PrimaryPlatformLink">Primary Platform Link</label>
                     </div>
 
@@ -153,14 +164,14 @@ include 'db-connect.php';
 
                     <!-- secondary platform link -->
                     <div class="form-group form-floating">
-                        <input type="text" class="form-control" id="SecondaryPlatformLink" placeholder="Secondary Platform Link">
+                        <input type="text" class="form-control" id="SecondaryPlatformLink" name="SecondaryPlatformLink" placeholder="Secondary Platform Link">
                         <label for="SecondaryPlatformLink">Secondary Platform Link</label>
                     </div>
 
                     <!-- profile pdf upload -->
                     <div class="form-group form-floating">
-                        <input type="file" class="form-control" id="ProfilePDF" placeholder="Profile PDF">
-                        <label for="ProfilePDF">Profile PDF</label>
+                        <input type="file" class="form-control" id="Profile" name="Profile" placeholder="Profile">
+                        <label for="Profile">Profile PDF</label>
                     </div>
 
                     <!-- where did you hear about us -->
@@ -175,9 +186,13 @@ include 'db-connect.php';
                     </select>
 
                     <!-- button to display terms -->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    Terms and Conditions
-                    </button>
+                    <div class="form-check" >
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                        <label class="form-check-label" for="invalidCheck2">
+                            Agree to terms and conditions
+                        </label>
+                    </div>
+
                     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
@@ -269,36 +284,103 @@ include 'db-connect.php';
                     </div>
 
                     <!-- submit button -->
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <div class="row justify-content-evenly">
+                        <button type="button" class="col-md-5 btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Terms and Conditions
+                        </button>
+                        <button type="submit" name="Submit" id="Submit" class="col-md-5 btn btn-primary">Submit</button>
+
+                    </div>
+
+
+
+                    <?php
+                    if(isset($_POST['Submit'])){
+                        $Name = $_POST['name'] ?? '';
+                        $PresentAddress = $_POST['PresentAddress'] ?? '';
+                        $PermanentAddress = $_POST['PermanentAddress'] ?? '';
+                        $Mobile =  $_POST['MobileNumber'] ?? '';
+                        $Email = $_POST['Email'] ?? '';
+                        $DOB = $_POST['DOB'] ?? '';
+                        $Gender = $_POST['Gender'] ?? '';
+                        $ContentSince = $_POST['CreatingSince'] ?? '';
+                        $ContentCategory = $_POST['ContentCategory'] ?? '';
+                        $PrimaryPlatform = $_POST['PrimaryPlatform'] ?? '';
+                        $PrimaryPlatformLink = $_POST['PrimaryPlatformLink'] ?? '';
+                        $SocialMediaCategory = $_POST['SocialMediaCategory'] ?? '';
+                        $SecondaryPlatform = $_POST['SecondaryPlatform'] ?? '';
+                        $SecondaryPlatformLink = $_POST['SecondaryPlatformLink'] ?? '';
+                        $Profile = $_POST['Profile'] ?? '';
+                        $HeardAboutUs = $_POST['HeardAboutUs'] ?? '';
+
+                        // sql code to insert the data into the database
+
+
+                        $sql = "INSERT INTO `Nomination` 
+                        (`Name`, `PresentAddress`, `PermanentAddress`,`Mobile`, `Email`, `DOB`, `Gender`, `CreatingContentSince`, `ContentCategory`, `PrimaryPlatform`, `CategorySocialMedia`, `PrimaryLink`, `SecondaryPlatform`, `SecondaryLink`, `Profile`, `Reach`) 
+                        VALUES 
+                        ('$Name', '$PresentAddress', '$PermanentAddress', '$Mobile', '$Email', '$DOB', '$Gender', '$ContentSince', '$ContentCategory', '$PrimaryPlatform', '$SocialMediaCategory', '$PrimaryPlatformLink', '$SecondaryPlatform', '$SecondaryPlatformLink', '$Profile', '$HeardAboutUs');";
+                        echo $sql;
+                        $result = mysqli_query($conn, $sql);
+                        // echo "hi3";
+
+                        if($result){
+                            echo "<script>alert('Nomination Submitted Successfully')</script>";
+                        }
+                        else{
+                            echo "<script>alert('Nomination Not Submitted')</script>";
+                        }
+                    }
+                ?>
 
                 </form>
 
                 <!-- php code to submit the form -->
-                <?php
-                    if(isset($_POST['Submit'])){
-                        $Name = $_POST['Name'];
-                        $Email = $_POST['Email'];
-                        $Phone = $_POST['Phone'];
-                        $Address = $_POST['Address'];
-                        $City = $_POST['City'];
-                        $State = $_POST['State'];
-                        $Country = $_POST['Country'];
-                        $PinCode = $_POST['PinCode'];
-                        $PrimaryPlatformLink = $_POST['PrimaryPlatformLink'];
-                        $SecondaryPlatformLink = $_POST['SecondaryPlatformLink'];
-                        $ProfilePDF = $_POST['ProfilePDF'];
-                        $HeardAboutUs = $_POST['HeardAboutUs'];
-                        $Terms = $_POST['Terms'];
-
-
-                    }
-                ?>
+               
             </div>
         </div>
 </section>
 
 	<!-- include footer.php -->
 	<?php include 'footer.php'; ?>
+
+
+    <script type="text/javascript">
+        // if clicked on same as present address, then put same data in permanent address field
+        // $(document).ready(function(){
+        //     $("#sameAsPresentAddress").click(function(){
+        //         if($(this).is(":checked")){
+        //             $("#PermanentAddress").val($("#PresentAddress").val());
+        //         }
+        //         else{
+        //             $("#PermanentAddress").val("");
+        //         }
+        //     });
+        // });
+
+
+    function FillAddressInput()
+        {
+            let checkBox= document.getElementById('sameAsPresent');
+
+            let pAddressLine = document.getElementById("PermanentAddress");
+
+            let curAddressLine = document.getElementById("PresentAddress");
+
+            if (checkBox.checked == true)
+            {
+            
+             pAddressLine.value = curAddressLine.value;    
+
+        }
+        else
+        {
+            pAddressLine.value = "";       
+        }
+    }
+
+
+    </script>
 	
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 	<!-- Javascript -->          
