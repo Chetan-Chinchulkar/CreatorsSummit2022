@@ -25,45 +25,32 @@
 </head> 
 
 <style>
-	*{
-
+	.bg{
+		/* set background image hero-1 */
+		width: 100vw;
+		height: auto;
+		background: url("assets/images/bg-1.jpg") no-repeat center center fixed;
 	}
 </style>
 
 <body>    
 
 <!-- include nav.php -->
+<div class="bg">
+
 	<?php include 'nav.php'; ?>
-		
+	
 	<?php include 'carousel.php'; ?>
+</div>
 	
 	<?php include 'about.php'; ?>
+	
+	<?php include 'session.php'; ?>
 
-	<?php include 'expect.php'; ?>
+	<?php include 'awards.php'; ?>
 	
-	<?php include 'session-topics.php'; ?>
-	
-	<!-- <?php include 'nomination.php'; ?> -->
-	
-	
-	
-	<div class="container">
-		<hr>
-	</div>
-	
-	<?php include 'schedule.php'; ?>
+	<?php include 'winners.php'; ?>
 
-
-	<?php include 'attend.php'; ?>
-
-	<?php include 'sponsors.php'; ?>
-	<br>
-	<hr>
-	<br>
-	<?php include 'contact.php'; ?>
-
-	<!-- include footer.php -->
-	<?php include 'footer.php'; ?>
 	
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 	<!-- Javascript -->          

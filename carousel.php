@@ -12,18 +12,19 @@
 		font-size: 24px;
 	}
 
+
 </style>
 
 <div id="hero-block" class="hero-block">
 		<div id="hero-carousel" class="hero-carousel carousel slide carousel-fade" data-ride="carousel">
-			<div class="carousel-inner">
+			<!-- <div class="carousel-inner">
 				<div class="carousel-item-1 carousel-item active">
 				</div>
 				<div class="carousel-item-2 carousel-item">
 				</div>
 				<div class="carousel-item-3 carousel-item">
 				</div>
-			</div>
+			</div> -->
 		</div>
 		<div class="hero-block-mask"></div>
 		<div class="container">
@@ -50,7 +51,7 @@
 
 	/* ======= Countdown ========= */
 	// set the date we're counting down to
-	var target_date = new Date("Aug 15, 2022").getTime();
+	var target_date = new Date("Sept 15, 2022").getTime();
 	
 	function update_countdown() {
 	// variables for time units
