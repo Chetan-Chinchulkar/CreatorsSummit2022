@@ -19,7 +19,7 @@
     .nav-item .nav-link{
 
         font-size: 20px ;
-        font-weight: 100 ;
+        font-weight: 400 ;
     }
 
     /* .nav-item .nav-link:active{

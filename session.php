@@ -1,6 +1,10 @@
 <style>
 	.session-section{
-        background: url("assets/images/bg-3.jpg") no-repeat center center fixed;
+        background: url("assets/images/bg-3.jpg") no-repeat center center;
+        -webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
         padding: 0;
 		
 	}

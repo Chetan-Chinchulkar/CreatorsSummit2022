@@ -36,9 +36,14 @@
 
 	.bg{
 		/* set background image hero-1 */
-		width: 100vw;
-		height: auto;
-		background: url("assets/images/bg-1.jpg") no-repeat center center fixed;
+		/* width: 100vw;
+		height: auto; */
+		background: url("assets/images/bg-1.jpg") no-repeat center center;
+		/* background: url(images/bg.jpg) no-repeat center center fixed;  */
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
 	}
 
 	.section-heading{

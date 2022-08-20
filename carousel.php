@@ -30,9 +30,8 @@
 				</div>
 			</div> -->
 		</div>
-		<div class="hero-block-mask"></div>
 		<div class="container">
-			<div class="hero-text-block">
+			<div class="hero-text-block mt-5">
 				<h2 class="hero-heading mb-2 text-white">G Plus <br> Creators Summit</h2>
 				<hr>
 				<div class="hero-meta mb-3" style="font-weight:100">25 September, 2022</div>
@@ -46,10 +45,14 @@
 				<div class="hero-cta"><a class="btn btn-primary btn-lg" style="width: 100% !important;background:white;color:#BA1D60;" href="registration-form.php" target="_blank">Register Now</a></div>
 				
 			</div><!--//hero-text-block-->
-		</div>
 
+		</div>
+		
 	</div><!--//hero-block-->
 	
+	<div style="height: 100px !important;"></div>
+	
+
 
 <script>
 

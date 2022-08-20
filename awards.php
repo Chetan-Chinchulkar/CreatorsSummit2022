@@ -2,7 +2,11 @@
 	.awards-section{
 		/* linear gradient background */
 		/* background: linear-gradient(90deg,#7E0036,#0C4369); */
-        background: url("assets/images/bg-2.jpg") no-repeat center center fixed;
+        background: url("assets/images/bg-2.jpg") no-repeat center center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
         padding: 0;
 		
 	}
