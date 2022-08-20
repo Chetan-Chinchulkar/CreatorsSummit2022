@@ -1,14 +1,24 @@
-<section id="contact-us-section" class="contact-us-section">
+<style>
+	.text{
+		font-size: 30px;
+	}	
+	.card{
+		/* box-shadow */
+		box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+	}
+</style>
+
+<section id="contact-us-section" class="contact-us-section theme-bg-light">
 		<h3 class="section-heading text-center mb-3">Contact Us</h3>
 		<div class="row pricing mb-5 justify-content-evenly">
 			<div class="col-12 col-md-4 p-2 p-lg-4">
-				<div class="card rounded-0 border-0">
+				<div class="card rounded-0 border-5">
 					<div class="card-body p-0">
 						<div class="heading  text-center p-3">
 							<h4 class="text-white mb-0">General Information, Nomination & Registrations</h4>
 						</div>
 						<div class="info p-3">
-							<div class="price-figure text-center mb-3"><span class="text">Jyotirmoy Barpujari</span></div>
+							<div class="name text-center mb-3"><span class="text text-black">Jyotirmoy Barpujari</span></div>
 							<div class="desc px-3">
 								
 								<br>
@@ -26,13 +36,13 @@
 				</div>
 			</div>
 			<div class="col-12 col-md-4 p-2 p-lg-4">
-				<div class="card rounded-0 border-0">
+				<div class="card rounded-0 border-5">
 					<div class="card-body p-0">
 						<div class="heading  text-center p-3">
 							<h4 class="text-white mb-0">Sponsorship and Tie Ups</h4>
 						</div>
 						<div class="info p-3">
-							<div class="price-figure text-center mb-3"><span class="text">XYZ</span></div>
+							<div class="name text-center mb-3"><span class="text text-black">XYZ</span></div>
 							<div class="desc px-3">
 								
 								<br>

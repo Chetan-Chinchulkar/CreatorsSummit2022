@@ -43,7 +43,7 @@
 				<div id="countdown-box" class="countdown-box text-white"></div>
 				</div><!--//event-countdown-->
 				<br>
-				<div class="hero-cta"><a class="btn btn-primary btn-lg" style="width: 100% !important;background:white;color:#BA1D60;" href="#" target="_blank">Register Now</a></div>
+				<div class="hero-cta"><a class="btn btn-primary btn-lg" style="width: 100% !important;background:white;color:#BA1D60;" href="registration-form.php" target="_blank">Register Now</a></div>
 				
 			</div><!--//hero-text-block-->
 		</div>

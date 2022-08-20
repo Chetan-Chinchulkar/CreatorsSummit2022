@@ -40,6 +40,19 @@
 		height: auto;
 		background: url("assets/images/bg-1.jpg") no-repeat center center fixed;
 	}
+
+	.section-heading{
+		/* set font to roboto bold */
+		font-size: 50px;
+		font-weight: 100;
+
+
+	}
+	.section-intro{
+		/* set font to roboto light */
+		font-size: 18px;
+		font-weight: 100;
+	}
 </style>
 
 <body>    
@@ -61,8 +74,11 @@
 	<?php include 'awards.php'; ?>
 	
 	<?php include 'winners.php'; ?>
-
 	
+	<?php include 'sponsors.php'; ?>
+	
+	<?php include 'contact.php'; ?>
+
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 	<!-- Javascript -->          
 	<script src="assets/plugins/popper.min.js"></script>

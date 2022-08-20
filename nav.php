@@ -46,10 +46,10 @@
                         
                         <li class="nav-item"><a class="nav-link scrollto RobotoLight" href="#hero-block">Home</a></li>                                              
                         <li class="nav-item"><a class="nav-link scrollto RobotoLight" href="#about-section">The Summit</a></li>                                              
-                        <li class="nav-item"><a class="nav-link scrollto RobotoLight" href="#nomination-section">Nomination</a></li>                                              
+                        <li class="nav-item"><a class="nav-link RobotoLight" href="nomination-form.php" target="_blank">Nomination</a></li>                                              
                         <!-- <li class="nav-item"><a class="nav-link scrollto RobotoLight" href="#speakers-section">Speakers</a></li> -->
-                        <li class="nav-item"><a class="nav-link scrollto RobotoLight" href="#schedule-section">Itinerary</a></li>
-                        <li class="nav-item"><a class="nav-link scrollto RobotoLight" href="#attend-section">Attend</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto RobotoLight" href="#session-section">Itinerary</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto RobotoLight" href="#expect-section">Attend</a></li>
                         <!-- <li class="nav-item"><a class="nav-link scrollto RobotoLight" href="#tickets-section">Tickets</a></li> -->
                         <!-- <li class="nav-item"><a class="nav-link scrollto RobotoLight" href="#venue-section">Venue</a></li> -->
                         <li class="nav-item"><a class="nav-link scrollto RobotoLight" href="#sponsors-section">Sponsors</a></li>

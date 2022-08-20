@@ -265,7 +265,7 @@ include 'bank-details.php';
                                 The shortlisted content creators will be notified by Phone/Email by 10th September 2022.
                                 </li>
                                 <li>
-                                    Winners will be selected by a specialized jury panelbased on different parameters – but not limited to- quality of content (weightage 50%), posts frequency (weightage 20%), engagement rate (weightage 10%), reach (weightage 10%) etc.
+                                    Winners will be selected by a specialized jury panelbased on different parameters - but not limited to- quality of content (weightage 50%), posts frequency (weightage 20%), engagement rate (weightage 10%), reach (weightage 10%) etc.
                                 <li>
                                 <li>
                                     Shortlisted content creators will be required to create 1 content on a given theme which might include product or services offered by sponsors of the Creators Summit 2022. These content need not be posted online. Will be for internal evaluation only. 

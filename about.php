@@ -1,18 +1,7 @@
 <style>
 	
 
-	.section-heading{
-		/* set font to roboto bold */
-		font-size: 50px;
-		font-weight: 100;
-
-
-	}
-	.section-intro{
-		/* set font to roboto light */
-		font-size: 18px;
-		font-weight: 100;
-	}
+	
 	.about-section{
 		/* linear gradient background */
 		background: linear-gradient(90deg,#7E0036,#0C4369);
@@ -25,7 +14,7 @@
 </style>
 
 <section id="about-section" class="about-section section theme-bg-light">
-		<div class="row justify-content-center " style="padding: 0 10vw ;" >
+		<div class="row justify-content-center " style="padding: 0 15vw ;" >
 			<div class="col-md" >
 				<h3 class="section-heading">The Summit</h3>
 				<div class="section-intro single-col-max mx-auto mb-4">

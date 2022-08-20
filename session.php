@@ -6,13 +6,13 @@
 	}
     .session-section > .bgs{
         
-        padding: 5% 10vw;
+        padding: 5% 15vw;
 		background-color: rgba(0,0,0,0.5);
         
     }
 	.session-section *{
 		color: white !important;
-		text-align: justify !important;
+		/* text-align: justify !important; */
 	}
 	
     .num{
@@ -24,6 +24,11 @@
         width: 50px;
 
     }
+
+    .detail-text{
+        font-size: 25px;
+        font-weight: 100;
+    }
 </style>
 
 <section id="session-section" class="session-section section theme-bg-light">
@@ -34,18 +39,18 @@
         <div class="row align-items-center">
             <div class="col-md-1 num align-self-center">
                 <h1>
-                    <strong>1</strong>
+                    1
                 </h1>
             </div>
-            <div class="col-md-5 align-">
+            <div class="col-md-5 detail-text">
                 Transforming from a User to an Influencer
             </div>
             <div class="col-md-1 num align-self-center">
                 <h1>
-                    <strong>5</strong>
+                    5
                 </h1>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 detail-text">
             Approaching prospects for collaboration
             </div>
         </div>
@@ -53,18 +58,18 @@
         <div class="row align-items-center">
             <div class="col-md-1 num align-self-center">
                 <h1>
-                    <strong>2</strong>
+                    2
                 </h1>
             </div>
-            <div class="col-md-5 align-">
+            <div class="col-md-5 detail-text">
             Growing audience in social media platforms
             </div>
             <div class="col-md-1 num align-self-center">
                 <h1>
-                    <strong>6</strong>
+                    6
                 </h1>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 detail-text">
             Traditional Campaign vs. Influencer Campaign
             </div>
         </div>
@@ -72,18 +77,18 @@
         <div class="row align-items-center">
             <div class="col-md-1 num align-self-center">
                 <h1>
-                    <strong>3</strong>
+                    3
                 </h1>
             </div>
-            <div class="col-md-5 align-">
+            <div class="col-md-5 detail-text">
             Keeping audience engaged with social media content
             </div>
             <div class="col-md-1 num align-self-center">
                 <h1>
-                    <strong>7</strong>
+                    7
                 </h1>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 detail-text">
             Creating the trust value among audience
             </div>
         </div>
@@ -91,18 +96,18 @@
         <div class="row align-items-center">
             <div class="col-md-1 num align-self-center">
                 <h1>
-                    <strong>4</strong>
+                    4
                 </h1>
             </div>
-            <div class="col-md-5 align-">
+            <div class="col-md-5 detail-text">
             Attracting sponsors and revenue models
             </div>
             <div class="col-md-1 num align-self-center">
                 <h1>
-                    <strong>8</strong>
+                    8
                 </h1>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 detail-text">
             What corporate campaign managers look for when engaging social media influencer?
             </div>
         </div>

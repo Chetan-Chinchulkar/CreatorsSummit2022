@@ -11,18 +11,18 @@
 		/* width: fit-content; */
 		/* height: auto; */
 
-		background-color: rgba(126,0,54,0.5);
+		background-color: rgba(126,0,54,0.8);
         /* background-color: #7E0036; */
     }
 	.awards-section *{
 		color: white !important;
-		text-align: justify !important;
+		/* text-align: justify !important; */
 	}
 	
 </style>
 
 <section id="awards-section" class="awards-section section theme-bg-light">
-		<div class="row justify-content-center " style="padding: 5vh 10vw ;" >
+		<div class="row justify-content-center " style="padding: 5vh 15vw ;" >
 			<div class="col-md" >
                 <div class="row">
                     

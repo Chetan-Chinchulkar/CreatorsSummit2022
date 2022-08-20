@@ -1,11 +1,9 @@
 
 <style>
     .expect{
-        padding: 0 10vw;
+        padding: 0 15vw;
         padding-top: 50px;
         padding-bottom: 200px;
-
-
     }
     .icon-expect{
         width: 100%;
@@ -15,16 +13,25 @@
         border-radius: 10px;
 
     }
+    .text-d{
+        /* padding: 10px; */
+        color: white;
+        font-size: 18px;
+        font-weight: 100;
+    }
+    .text-d strong{
+        font-weight: 700;
+    }
 </style>
-<section class="expect">
-    <h2 class="section-heading" style="color: #7E0036;font-weight:100;">What to expect</h2>
+<section class="expect mb-5" id="expect-section">
+    <h2 class="section-heading" style="color: #7E0036;font-weight:100;margin-bottom:40px">What to expect</h2>
     
     <div class="row justify-center">
         <div class="col-md">
             <div class="icon-expect">
-                hello
+            <i class="fa-solid fa-screen-users"></i>
             </div>
-            <div class="text-black">
+            <div class="text-d text-black">
                 <strong>Interactive sessions </strong>	
                 with celebrated social media influencers
             </div>
@@ -33,7 +40,7 @@
             <div class="icon-expect">
                 hello
             </div>
-            <div class="text-black">
+            <div class="text-d text-black">
             <strong>Panel discussion</strong> with industry experts
             </div>
         </div>
@@ -41,7 +48,7 @@
             <div class="icon-expect">
                 hello
             </div>
-            <div class="text-black">
+            <div class="text-d text-black">
             <strong>Sponsor</strong> presentations
             </div>
         </div>
@@ -49,7 +56,7 @@
             <div class="icon-expect">
                 hello
             </div>
-            <div class="text-black">
+            <div class="text-d text-black">
             Live <strong>performance</strong>
             </div>
         </div>
@@ -57,7 +64,7 @@
             <div class="icon-expect">
                 hello
             </div>
-            <div class="text-black">
+            <div class="text-d text-black">
             <strong>Awards</strong> Ceremony 
             </div>
         </div>
@@ -65,7 +72,7 @@
             <div class="icon-expect">
                 hello
             </div>
-            <div class="text-black">
+            <div class="text-d text-black">
             <strong>Cocktail Dinner</strong> Service 
             </div>
         </div>
