@@ -16,10 +16,15 @@
         width: auto
     }
 
-    .nav-item{
-        font-size: 18px !important;
-        font-weight: 100 !important;
+    .nav-item .nav-link{
+
+        font-size: 20px ;
+        font-weight: 100 ;
     }
+
+    /* .nav-item .nav-link:active{
+        font-weight: 200;
+    } */
 
 </style>
 
@@ -39,21 +44,19 @@
                 <div id="navigation" class="navbar-collapse collapse  justify-content-lg-end me-lg-3">
                     <ul class="nav navbar-nav">
                         
-                        <li class="nav-item"><a class="nav-link scrollto" href="#hero-block">Home</a></li>                                              
-                        <li class="nav-item"><a class="nav-link scrollto" href="#about-section">The Summit</a></li>                                              
-                        <li class="nav-item"><a class="nav-link scrollto" href="#nomination-section">Nomination</a></li>                                              
-                        <!-- <li class="nav-item"><a class="nav-link scrollto" href="#speakers-section">Speakers</a></li> -->
-                        <li class="nav-item"><a class="nav-link scrollto" href="#schedule-section">Itinerary</a></li>
-                        <li class="nav-item"><a class="nav-link scrollto" href="#attend-section">Attend</a></li>                                              
-                        <!-- <li class="nav-item"><a class="nav-link scrollto" href="#tickets-section">Tickets</a></li> -->
-                        <!-- <li class="nav-item"><a class="nav-link scrollto" href="#venue-section">Venue</a></li> -->
-                        <li class="nav-item"><a class="nav-link scrollto" href="#sponsors-section">Sponsors</a></li>
-                        <li class="nav-item"><a class="nav-link scrollto" href="#contact-us-section">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto RobotoLight" href="#hero-block">Home</a></li>                                              
+                        <li class="nav-item"><a class="nav-link scrollto RobotoLight" href="#about-section">The Summit</a></li>                                              
+                        <li class="nav-item"><a class="nav-link scrollto RobotoLight" href="#nomination-section">Nomination</a></li>                                              
+                        <!-- <li class="nav-item"><a class="nav-link scrollto RobotoLight" href="#speakers-section">Speakers</a></li> -->
+                        <li class="nav-item"><a class="nav-link scrollto RobotoLight" href="#schedule-section">Itinerary</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto RobotoLight" href="#attend-section">Attend</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link scrollto RobotoLight" href="#tickets-section">Tickets</a></li> -->
+                        <!-- <li class="nav-item"><a class="nav-link scrollto RobotoLight" href="#venue-section">Venue</a></li> -->
+                        <li class="nav-item"><a class="nav-link scrollto RobotoLight" href="#sponsors-section">Sponsors</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto RobotoLight" href="#contact-us-section">Contact</a></li>
                     </ul><!--//nav-->
                 </div><!--//navabr-collapse-->
-
             </nav><!--//main-nav-->
-            
         </div>
     </div><!--//branding-->
 </header><!--//header-->

@@ -13,7 +13,6 @@
 	
 	<!-- Google Font -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:600,700,800|Roboto:300,400,700&display=swap" rel="stylesheet">
 	
 	<!-- FontAwesome JS-->
 	<script defer src="assets/fontawesome/js/all.min.js"></script>
@@ -21,10 +20,20 @@
 	<!-- Theme CSS -->  
 	<link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
 </head> 
 
 <style>
+
+	@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+	* {
+		font-family: 'Roboto Light', 'Roboto Medium', 'Roboto'
+	}
+
 	.bg{
 		/* set background image hero-1 */
 		width: 100vw;
@@ -45,6 +54,8 @@
 	
 	<?php include 'about.php'; ?>
 	
+	<?php include 'expect.php'; ?>
+
 	<?php include 'session.php'; ?>
 
 	<?php include 'awards.php'; ?>

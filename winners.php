@@ -7,8 +7,6 @@
 
 
     }
-    .winner-block{
-    }
     .winner-innerblock{
         background-color: #BA1D60;
         padding: 30px 30px;
@@ -17,7 +15,7 @@
     
 </style>
 <section class="winner">
-    <h2 class="section-heading" style="color: #BA1D60;font-weight:100;">What’s in store for the winners?</h2>
+    <h2 class="section-heading" style="color: #BA1D60;font-weight:100;">What's in store for the winners?</h2>
     <br>
     <br>
     <div class="container">
