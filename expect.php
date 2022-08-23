@@ -1,82 +1,120 @@
-
 <style>
-    .expect{
+    .expect {
         padding: 0 15vw;
         padding-top: 50px;
         padding-bottom: 200px;
     }
-    .icon-expect{
+
+    .icon-expect {
         width: 100%;
-        height: 200%;
-        background: linear-gradient(#7E0036,#000000);
+        height: 100%;
+        background: linear-gradient(#7E0036, #0C4369);
         /* make a rectangle */
         border-radius: 10px;
 
     }
-    .text-d{
+
+    .text-d {
         /* padding: 10px; */
         color: white;
         font-size: 18px;
         font-weight: 100;
     }
-    .text-d strong{
+
+    .text-d strong {
         font-weight: 700;
     }
 </style>
 <section class="expect mb-5" id="expect-section">
     <h2 class="section-heading" style="color: #7E0036;font-weight:100;margin-bottom:40px">What to expect</h2>
-    
+
     <div class="row justify-center">
         <div class="col-md">
             <div class="icon-expect">
-            <i class="fa-solid fa-screen-users"></i>
+                <!-- <i class="fa-solid fa-screen-users"> -->
+                    <center><img style=" position: relative;
+top: 50%;width:100px;
+transform: translateY(50%);
+   " src="assets/ico/Interaction (2).svg" alt="">
+
+                <!-- </i> -->
             </div>
             <div class="text-d text-black">
-                <strong>Interactive sessions </strong>	
+                <strong>Interactive sessions </strong>
                 with celebrated social media influencers
             </div>
         </div>
         <div class="col-md">
             <div class="icon-expect">
-                hello
+                <!-- <i class="fa-solid fa-screen-users"> -->
+                    <center><img style=" position: relative;
+top: 50%;width:100px;
+transform: translateY(50%);
+   " src="assets/ico/Panel discussion.svg" alt="">
+
+                <!-- </i> -->
             </div>
             <div class="text-d text-black">
-            <strong>Panel discussion</strong> with industry experts
+                <strong>Panel discussion</strong> with industry experts
             </div>
         </div>
         <div class="col-md">
             <div class="icon-expect">
-                hello
+                <!-- <i class="fa-solid fa-screen-users"> -->
+                    <center><img style=" position: relative;
+top: 50%;width:100px;
+transform: translateY(50%);
+   " src="assets/ico/Speech dais.svg" alt="">
+
+                <!-- </i> -->
             </div>
             <div class="text-d text-black">
-            <strong>Sponsor</strong> presentations
+                <strong>Sponsor</strong> presentations
             </div>
         </div>
         <div class="col-md">
             <div class="icon-expect">
-                hello
+                <!-- <i class="fa-solid fa-screen-users"> -->
+                    <center><img style=" position: relative;
+top: 50%;width:70px;
+transform: translateY(25%);
+   " src="assets/ico/Dancing man.svg" alt="">
+
+                <!-- </i> -->
             </div>
             <div class="text-d text-black">
-            Live <strong>performance</strong>
+                Live <strong>performance</strong>
             </div>
         </div>
         <div class="col-md">
             <div class="icon-expect">
-                hello
+                <!-- <i class="fa-solid fa-screen-users"> -->
+                    <center><img style=" position: relative;
+top: 50%;width:100px;
+transform: translateY(50%);
+   " src="assets/ico/Certificate.svg" alt="">
+
+                <!-- </i> -->
             </div>
             <div class="text-d text-black">
-            <strong>Awards</strong> Ceremony 
+                <strong>Awards</strong> Ceremony
             </div>
         </div>
         <div class="col-md">
             <div class="icon-expect">
-                hello
+                <!-- <i class="fa-solid fa-screen-users"> -->
+                    <center><img style=" position: relative;
+top: 50%;width:100px;
+transform: translateY(50%);
+   " src="assets/ico/Cocktail.svg" alt="">
+
+                <!-- </i> -->
             </div>
             <div class="text-d text-black">
-            <strong>Cocktail Dinner</strong> Service 
+                <strong>Cocktail Dinner</strong> Service
             </div>
         </div>
     </div>
 
-    
+
 </section>
