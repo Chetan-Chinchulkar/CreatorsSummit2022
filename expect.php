@@ -8,7 +8,7 @@
     .icon-expect {
         width: 100%;
         height: 100%;
-        background: linear-gradient(#7E0036, #0C4369);
+        background: linear-gradient(#7E0036, #000000);
         /* make a rectangle */
         border-radius: 10px;
 
@@ -35,7 +35,7 @@
                     <center><img style=" position: relative;
 top: 50%;width:100px;
 transform: translateY(50%);
-   " src="assets/ico/Interaction (2).svg" alt="">
+   " src="assets/ico/Interaction.png" alt="">
 
                 <!-- </i> -->
             </div>
@@ -50,7 +50,7 @@ transform: translateY(50%);
                     <center><img style=" position: relative;
 top: 50%;width:100px;
 transform: translateY(50%);
-   " src="assets/ico/Panel discussion.svg" alt="">
+   " src="assets/ico/Panel discussion.png" alt="">
 
                 <!-- </i> -->
             </div>
@@ -64,7 +64,7 @@ transform: translateY(50%);
                     <center><img style=" position: relative;
 top: 50%;width:100px;
 transform: translateY(50%);
-   " src="assets/ico/Speech dais.svg" alt="">
+   " src="assets/ico/Speech dais.png" alt="">
 
                 <!-- </i> -->
             </div>
@@ -78,7 +78,7 @@ transform: translateY(50%);
                     <center><img style=" position: relative;
 top: 50%;width:70px;
 transform: translateY(25%);
-   " src="assets/ico/Dancing man.svg" alt="">
+   " src="assets/ico/Dancing man.png" alt="">
 
                 <!-- </i> -->
             </div>
@@ -92,7 +92,7 @@ transform: translateY(25%);
                     <center><img style=" position: relative;
 top: 50%;width:100px;
 transform: translateY(50%);
-   " src="assets/ico/Certificate.svg" alt="">
+   " src="assets/ico/Certificate.png" alt="">
 
                 <!-- </i> -->
             </div>
@@ -106,7 +106,7 @@ transform: translateY(50%);
                     <center><img style=" position: relative;
 top: 50%;width:100px;
 transform: translateY(50%);
-   " src="assets/ico/Cocktail.svg" alt="">
+   " src="assets/ico/Cocktail.png" alt="">
 
                 <!-- </i> -->
             </div>

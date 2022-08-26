@@ -42,7 +42,7 @@
 							<h4 class="text-white mb-0">Sponsorship and Tie Ups</h4>
 						</div>
 						<div class="info p-3">
-							<div class="name text-center mb-3"><span class="text text-black">XYZ</span></div>
+							<div class="name text-center mb-3"><span class="text text-black"></span></div>
 							<div class="desc px-3">
 								
 								<br>

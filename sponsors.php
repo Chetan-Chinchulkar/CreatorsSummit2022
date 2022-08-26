@@ -9,7 +9,7 @@
 				Reach us to explore sponsorship and partnership opportunities.
 			</div>
 			<div class="row logos justify-content-center">
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="assets/images/logos/logo-1.svg" alt=""></div>
+				<!-- <div class="logo-item col-6 col-md-4 col-lg-2"><img src="assets/images/logos/logo-1.svg" alt=""></div>
 				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="assets/images/logos/logo-2.svg" alt=""></div>
 				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="assets/images/logos/logo-3.svg" alt=""></div>
 				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="assets/images/logos/logo-4.svg" alt=""></div>
@@ -20,7 +20,7 @@
 				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="assets/images/logos/logo-9.svg" alt=""></div>
 				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="assets/images/logos/logo-10.svg" alt=""></div>
 				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="assets/images/logos/logo-11.svg" alt=""></div>
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="assets/images/logos/logo-12.svg" alt=""></div>
+				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="assets/images/logos/logo-12.svg" alt=""></div> -->
 			</div>
 			<div class="sponsors-cta text-center pt-5"><a class="btn-primary btn btn-lg" href="#">Become A Sponsor</a></div>
 		</div>
