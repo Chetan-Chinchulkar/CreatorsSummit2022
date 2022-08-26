@@ -16,20 +16,37 @@
 		font-size: 24px;
 	}
 
+	@media screen and (max-width: 768px) {
+		.hero-block{
+		/* padding-top: 50px; */
+		height: 50vh;
+		}
+		.hero-text-block{
+			width: 80vw;
+			height: 100%;
+			margin-top: 10% !important;
+
+		}
+		.hero-text-block h2{
+			font-size: 18px;
+		}
+
+		.hero-text-block .hero-meta{
+			font-size: 12px;
+		}
+
+		.hero-text-block .event-countdown  > *{
+			font-size: 18px;
+		}
+		.hero-text-block .hero-cta a{
+			font-size: 18px;
+		}
+	}
 
 </style>
 
 <div id="hero-block" class="hero-block">
-		<div id="hero-carousel" class="hero-carousel carousel slide carousel-fade" data-ride="carousel">
-			<!-- <div class="carousel-inner">
-				<div class="carousel-item-1 carousel-item active">
-				</div>
-				<div class="carousel-item-2 carousel-item">
-				</div>
-				<div class="carousel-item-3 carousel-item">
-				</div>
-			</div> -->
-		</div>
+		
 		<div class="container">
 			<div class="hero-text-block mt-5">
 				<h2 class="hero-heading mb-2 text-white">G Plus <br> Creators Summit</h2>
@@ -39,9 +56,8 @@
 				<hr>
 
 				<div class="event-countdown text-center mb-3">		   
-				<div id="countdown-box" class="countdown-box text-white"></div>
+					<div id="countdown-box" class="countdown-box text-white"></div>
 				</div><!--//event-countdown-->
-				<br>
 				<div class="hero-cta"><a class="btn btn-primary btn-lg" style="width: 100% !important;background:white;color:#BA1D60;" href="registration-form.php" target="_blank">Register Now</a></div>
 				
 			</div><!--//hero-text-block-->

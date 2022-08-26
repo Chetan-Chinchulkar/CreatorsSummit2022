@@ -26,6 +26,21 @@
         font-size: 18px;
         font-weight: 600;
     }
+
+    @media screen and (max-width:768px) {
+        .winner-innerblock, .winner-innerblock strong{
+            font-size: 12px;
+        }
+        .inner-block h1{
+            font-size: 12px !important;
+        }
+        .col ,.innerblock{
+            margin-top: 10px;
+        }
+        .winner{
+            padding-bottom: 50px;
+        }
+    }
 </style>
 <section class="winner">
     <h2 class="section-heading" style="color: #BA1D60;font-weight:100;">What's in store for the winners?</h2>
@@ -34,17 +49,17 @@
     <div class="container">
 
         <div class="winner-block row justify-content-between text-white">
-            <div class="col-md-4 winner-innerblock">
+            <div class="col col-md-4 winner-innerblock">
                 Cash award of Rs.
                 <h1 class="text-white">1,00,000</h1>
                 for the <strong>Content Creator of the Year</strong>
             </div>
-            <div class="col-md-4 winner-innerblock">
+            <div class="col col-md-4 winner-innerblock">
                 Cash award of Rs.
                 <h1 class="text-white">25,000</h1>
                 for the <strong>winners of all categories</strong>
             </div>
-            <div class="col-md-3 align-self-center">
+            <div class="col col-md-3 align-self-center">
                 <div class="row  winner-innerblock inner-block mb-2 justify-content-center">
                     <strong>Certificates and Mementoes</strong>
                 </div>

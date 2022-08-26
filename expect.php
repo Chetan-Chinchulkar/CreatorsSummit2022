@@ -24,18 +24,37 @@
     .text-d strong {
         font-weight: 700;
     }
+
+    @media screen and (max-width:768px){
+        .icon-expect center img{
+            /* width: 50%;
+            height: 50%; */
+            transform: translateY(10%) !important;
+        }
+        .col-sm-12{
+            /* padding: 10px 20px; */
+            margin: 25px auto;
+            /* margin-bottom: 25px; */
+        }
+        .text-d{
+            padding-top: 10px;
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+
 </style>
 <section class="expect mb-5" id="expect-section">
     <h2 class="section-heading" style="color: #7E0036;font-weight:100;margin-bottom:40px">What to expect</h2>
 
     <div class="row justify-center">
-        <div class="col-md">
+        <div class="col-md col-sm-12 ">
             <div class="icon-expect">
                 <!-- <i class="fa-solid fa-screen-users"> -->
                     <center><img style=" position: relative;
 top: 50%;width:100px;
 transform: translateY(50%);
-   " src="assets/ico/Interaction.png" alt="">
+   " src="assets/ico/Interaction.png" alt=""></center>
 
                 <!-- </i> -->
             </div>
@@ -44,13 +63,13 @@ transform: translateY(50%);
                 with celebrated social media influencers
             </div>
         </div>
-        <div class="col-md">
+        <div class="col-md col-sm-12 ">
             <div class="icon-expect">
                 <!-- <i class="fa-solid fa-screen-users"> -->
                     <center><img style=" position: relative;
 top: 50%;width:100px;
 transform: translateY(50%);
-   " src="assets/ico/Panel discussion.png" alt="">
+   " src="assets/ico/Panel discussion.png" alt=""></center>
 
                 <!-- </i> -->
             </div>
@@ -58,13 +77,13 @@ transform: translateY(50%);
                 <strong>Panel discussion</strong> with industry experts
             </div>
         </div>
-        <div class="col-md">
+        <div class="col-md col-sm-12 ">
             <div class="icon-expect">
                 <!-- <i class="fa-solid fa-screen-users"> -->
                     <center><img style=" position: relative;
 top: 50%;width:100px;
 transform: translateY(50%);
-   " src="assets/ico/Speech dais.png" alt="">
+   " src="assets/ico/Speech dais.png" alt=""></center>
 
                 <!-- </i> -->
             </div>
@@ -72,13 +91,13 @@ transform: translateY(50%);
                 <strong>Sponsor</strong> presentations
             </div>
         </div>
-        <div class="col-md">
+        <div class="col-md col-sm-12 ">
             <div class="icon-expect">
                 <!-- <i class="fa-solid fa-screen-users"> -->
                     <center><img style=" position: relative;
 top: 50%;width:70px;
 transform: translateY(25%);
-   " src="assets/ico/Dancing man.png" alt="">
+   " src="assets/ico/Dancing man.png" alt=""></center>
 
                 <!-- </i> -->
             </div>
@@ -86,13 +105,13 @@ transform: translateY(25%);
                 Live <strong>performance</strong>
             </div>
         </div>
-        <div class="col-md">
+        <div class="col-md col-sm-12 ">
             <div class="icon-expect">
                 <!-- <i class="fa-solid fa-screen-users"> -->
                     <center><img style=" position: relative;
 top: 50%;width:100px;
 transform: translateY(50%);
-   " src="assets/ico/Certificate.png" alt="">
+   " src="assets/ico/Certificate.png" alt=""></center>
 
                 <!-- </i> -->
             </div>
@@ -100,13 +119,13 @@ transform: translateY(50%);
                 <strong>Awards</strong> Ceremony
             </div>
         </div>
-        <div class="col-md">
+        <div class="col-md col-sm-12 ">
             <div class="icon-expect">
                 <!-- <i class="fa-solid fa-screen-users"> -->
                     <center><img style=" position: relative;
 top: 50%;width:100px;
 transform: translateY(50%);
-   " src="assets/ico/Cocktail.png" alt="">
+   " src="assets/ico/Cocktail.png" alt=""></center>
 
                 <!-- </i> -->
             </div>

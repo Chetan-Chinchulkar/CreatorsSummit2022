@@ -23,6 +23,13 @@
 		/* text-align: justify !important; */
 	}
 	
+
+	@media screen and (max-width:768px) {
+		ul li > *{
+			font-size: 13px;
+			/* font-weight: 100; */
+		}
+	}
 </style>
 
 <section id="awards-section" class="awards-section section theme-bg-light">

@@ -6,6 +6,15 @@
 		/* box-shadow */
 		box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
 	}
+
+	@media sreen and (max-width:768px){
+		.name .text{
+			font-size: 12px !important;
+		}
+		.col-12{
+			margin: 0 12px; 
+		}
+	}
 </style>
 
 <section id="contact-us-section" class="contact-us-section theme-bg-light">

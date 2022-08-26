@@ -58,6 +58,19 @@
 		font-size: 18px;
 		font-weight: 100;
 	}
+
+	@media screen and (max-width:768px) {
+		.section-heading{
+			font-size: 24px;
+
+		}
+		.section-intro{
+			font-size: 12px;
+		}
+		.btn{
+			font-size: 18px;
+		}
+	}
 </style>
 
 <body>    
